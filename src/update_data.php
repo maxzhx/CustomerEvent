@@ -1,8 +1,8 @@
 <?php
 header("Content-Type: text/html;charset=utf-8");
 
-$connections = new MongoClient(); // connect
-$db = $connections->localz;
+$connections = new MongoClient("mongodb://mongodb:27017"); // connect
+$db = $connections->customerevent;
 
 $type = $_GET["type"];
 

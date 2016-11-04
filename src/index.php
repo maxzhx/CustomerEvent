@@ -11,7 +11,7 @@
 <body ng-controller="EventsController">
 <ng-view></ng-view>
 <?php if(!isset($_SESSION["login_user"])){ ?>
-  <form method="post" action="login.php">  
+  <form method="post" action="login.php">
     <table id="login_table">
       <tr>
         <td><input class="login_text" type="text" name="username" value="" placeholder="Username"/></td>

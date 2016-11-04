@@ -120,6 +120,8 @@ angular.module('app', ['ngRoute','ngAnimate'])
       $scope.detail_id = 0;
       $scope.show_type = 1;
       $http.get('/get_data.php?type=1').success(function(data){
+        console.log(data);
+        console.log("user======");
         $scope.customers = data;
       }).error(function(data, status){
         console.log(data, status);
@@ -132,9 +134,12 @@ angular.module('app', ['ngRoute','ngAnimate'])
       $scope.detail_id = 0;
       $scope.show_type = 2;
       $http.get('/get_data.php?type=2').success(function(data){
+        console.log(data);
+        console.log("suc======");
         $scope.events = data;
       }).error(function(data, status){
         console.log(data, status);
+        console.log("err======");
         $scope.events = [];
       });
     }
